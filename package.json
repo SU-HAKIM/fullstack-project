@@ -24,6 +24,7 @@
     "requests": "^0.3.0"
   },
   "devDependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^5.1.0"
   }
 }
