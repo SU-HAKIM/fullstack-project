@@ -15,37 +15,8 @@
 </head>
 
 <body>
-    <div class="container-fluid main_menu">
-        <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <nav class="navbar navbar-expand-lg ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><i class="far fa-snowflake"></i> HakimWeather <i
-                                class="far fa-snowflake"></i></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/weather">Weather</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/about">About</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- main header -->
+    {{>header}}
+    {{!-- header  --}}
     <main class="container-fluid main_header">
         <div class="row">
             <div class="col-md-10 col-12 mx-auto">
@@ -86,12 +57,10 @@
     </main>
     <!-- main header -->
     <!-- footer code -->
-    <footer>
-        <p>Created with 💓 By Hakim</p>
-    </footer>
+    {{>footer}}
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-</script>
+    </script>
 
 </html>
