@@ -1,13 +1,19 @@
 //? dependencies
 
 const express = require("express");
+const path = require("path");
 
 //? constants
 const app = express();
+const staticPath=path.join(__dirname,"../public")
 
 //? constants
 
 const port=process.env.PORT || 3000
+
+//? serving static page
+
+app.use(express.static(staticPath))
 
 //?routing
 
