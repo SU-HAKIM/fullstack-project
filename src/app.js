@@ -48,7 +48,7 @@ app.get("*", (req,res) => {
 })
 
 
-
+console.log("sadi");
 
 //? listening server
 app.listen(port, () => {
